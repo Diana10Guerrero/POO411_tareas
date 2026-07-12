@@ -13,3 +13,16 @@ Materia::Materia(std::string _nombre, float _codigo, float _creditos)
     nombre = *pNombre;
     codigo = *pCodigo;
     creditos = *pCreditos;
+}
+
+// Método para mostrar información de la materia
+void Materia::mostrar_info()
+{
+    std::string *pNombre = &nombre;
+    float *pCodigo = &codigo;
+    float *pCreditos = &creditos;
+
+    std::cout << "Materia: " << *pNombre
+              << ", Código: " << *pCodigo
+              << ", Créditos: " << *pCreditos << std::endl;
+}
