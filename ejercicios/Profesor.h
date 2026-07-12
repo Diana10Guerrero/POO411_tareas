@@ -4,8 +4,10 @@
 
 class Profesor {
 private:
-    std::string nombre;
     std::string codigo;
+    std::string nombre;
+    std::string matricula;
+    std::string sesion;
 
 public:
     Profesor() {}
