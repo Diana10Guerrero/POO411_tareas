@@ -1,4 +1,4 @@
-#include "Profesor.h"
+#include "Profesor1.h"
 #include <iostream>
 #include <fstream>
 

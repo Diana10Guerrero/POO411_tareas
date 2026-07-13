@@ -1,8 +1,8 @@
 // Incluyo plantilla de Calificacion
-#include "Calificacion.h"
-#include "Estudiante.h"
-#include "Profesor.h"
-#include "Materia.h"
+#include "Calificacion1.h"
+#include "Estudiante1.h"
+#include "Profesor1.h"
+#include "Materia1.h"
 #include <iostream>
 #include <fstream>
 

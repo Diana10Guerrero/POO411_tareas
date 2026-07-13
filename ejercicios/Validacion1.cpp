@@ -1,5 +1,5 @@
 #pragma once
-#include "Validacion.h"
+#include "Validacion1.h"
 
 
 Validacion::Validacion()

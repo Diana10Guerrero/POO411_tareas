@@ -1,5 +1,5 @@
-#ifndef validacion_h
-#define validacion_h
+#ifndef validacion1_h
+#define validacion1_h
 
 #include <string>
 

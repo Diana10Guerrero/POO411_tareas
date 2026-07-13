@@ -1,11 +1,11 @@
 #pragma once
 #include <vector>
-#include "Estudiante.h"
-#include "Profesor.h"
-#include "Materia.h"
-#include "Calificacion.h"
-#include "Validacion.h"
-#include "Persistencia.h"
+#include "Estudiante1.h"
+#include "Profesor1.h"
+#include "Materia1.h"
+#include "Calificacion1.h"
+#include "Validacion1.h"
+#include "Persistencia1.h"
 
 
 class Sistema
