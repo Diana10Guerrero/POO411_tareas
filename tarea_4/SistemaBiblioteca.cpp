@@ -1,31 +1,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "biblioteca.h"
 
-/*---------------------------------
-Práctica: sistema de préstamos de biblioteca
-
-Convierta el programa entregado a programación orientada a objetos.
-
-Debe crear una clase base abstracta MaterialBiblioteca y utilizar herencia y
-polimorfismo para representar Libro y Revista. Los materiales deben guardarse
-en una sola colección mediante punteros inteligentes.
-
-Debe crear las clases Usuario, Prestamo y SistemaBiblioteca. SistemaBiblioteca
-debe controlar el menú, las validaciones y la persistencia.
-
-Debe separar cada clase en sus archivos .h y .cpp. Todos los atributos deben
-ser privados. No puede utilizar variables globales ni `using namespace std`.
-
-Debe conservar el comportamiento del programa original e implementar además:
-  - Guardado y carga automática de usuarios, materiales y préstamos en archivos
-    de texto.
-  - Códigos únicos para usuarios y materiales.
-  - Validación de disponibilidad antes de prestar un material.
-  - Devolución de materiales prestados.
-  - Un máximo de tres préstamos activos por usuario.
-
---------------------------------------*/
 
 struct Material {
   int tipo;
