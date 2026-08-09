@@ -1,23 +1,14 @@
 #pragma once
+#include <iostream>
 #include <string>
 
 class MaterialBiblioteca {
-protected:
-    int tipo;
-    std::string codigo;
-    std::string titulo;
-    std::string responsable;
-    bool disponible;
-
-public:
-    MaterialBiblioteca(int _tipo, const std::string& _codigo,
-                       const std::string& _titulo,
-                       const std::string& _responsable,
-                       bool _disponible)
-        : tipo(_tipo), codigo(_codigo), titulo(_titulo),
-          responsable(_responsable), disponible(_disponible) {}
-
+private:
     virtual void mostrarInfo() const = 0;
+    virtual bool estaDisponible() const = 0;
+    virtual void prestar() = 0;
+    virtual void devolver() = 0;
+    virtual ~MaterialBiblioteca() {}
 };
 
 

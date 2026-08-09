@@ -1,27 +1,28 @@
+#include "Libro.h"
 #include <iostream>
 #include <string>
 #include <memory>
-#include "MaterialBiblioteca.h"
 
-class Libro : public MaterialBiblioteca {
-private:
-    std::string autor;
+Libro::Libro(const std::string& codigo,
+             const std::string& titulo,
+             const std::string& autor)
+    : codigo(codigo), titulo(titulo), autor(autor), disponible(true)
+{}
 
-public:
-    Libro(int tipo,
-          const std::string& codigo,
-          const std::string& titulo,
-          const std::string& responsable,
-          bool disponible,
-          const std::string& autor)
-        : MaterialBiblioteca(tipo, codigo, titulo, responsable, disponible),
-          autor(autor)
-    {}
+void Libro::mostrarInfo() const {
+    std::cout << "Libro: " << codigo
+              << " - " << titulo
+              << " - " << autor << std::endl;
+}
 
-    void mostrarInfo() const override {
-        std::cout << "Libro: " << codigo
-                  << " - " << titulo
-                  << " - " << autor << std::endl;
-    }
-};
+bool Libro::estaDisponible() const {
+    return disponible;
+}
 
+void Libro::prestar() {
+    disponible = false;
+}
+
+void Libro::devolver() {
+    disponible = true;
+}

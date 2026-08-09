@@ -4,32 +4,24 @@
 #include <memory>
 #include "MaterialBiblioteca.h"
 
-class Usuario : public MaterialBiblioteca {
+class Libro : public MaterialBiblioteca {
 private:
     std::string codigo;
-    std::string nombre;
+    std::string titulo;
+    std::string autor;
+    bool disponible;
 
- 
     std::unique_ptr<Usuario> usuarioInterno;
 
 public:
-    Usuario(const std::string& codigo,
-            const std::string& nombre)
-        : MaterialBiblioteca(4, codigo, nombre, "N/A", true),
-          codigo(codigo),
-          nombre(nombre),
-          usuarioInterno(nullptr)    
-    {}
+    Libro(const std::string& codigo,
+          const std::string& titulo,
+          const std::string& autor);
 
-    void mostrarInfo() const override {
-        std::cout << "Usuario: " << codigo
-                  << " - " << nombre << std::endl;
-    }
-
- 
-    void crearUsuarioInterno(const std::string& cod,
-                             const std::string& nom)
-    {
-        usuarioInterno = std::make_unique<Usuario>(cod, nom);
-    }
+    void mostrarInfo() const override;
+    bool estaDisponible() const override;
+    void prestar() override;
+    void devolver() override;
 };
+
+    
