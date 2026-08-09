@@ -1,3 +1,8 @@
+#include <iostream>
+#include <string>
+#include <memory>
+#include "MaterialBiblioteca.h"
+
 class Libro : public MaterialBiblioteca {
 private:
     std::string autor;

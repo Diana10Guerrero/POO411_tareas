@@ -1,3 +1,8 @@
+#include <iostream>
+#include <string>
+#include <memory>
+#include "MaterialBiblioteca.h"
+
 class MaterialBiblioteca {
 public:
     virtual void mostrarInfo() const = 0;
