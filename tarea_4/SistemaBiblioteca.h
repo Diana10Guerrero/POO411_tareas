@@ -7,6 +7,8 @@
 #include "MaterialBiblioteca.h"
 #include "Usuario.h"
 #include "Prestamo.h"
+#include "Libro.h"
+#include "Revista.h"
 
 class SistemaBiblioteca {
 private:
