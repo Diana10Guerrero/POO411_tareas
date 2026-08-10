@@ -8,6 +8,7 @@ class Mago : public Personaje {
 private:
     std::string nombre;
     int vida;
+    int nivel;
     std::string podermagico;
 
 public:
@@ -20,12 +21,18 @@ public:
     std::unique_ptr<Personaje> personajeInterno;
 
 public:
+ {  
     Mago(const std::string& nombre,
           const int vida,
+          const int nivel,
           const int podermagico);
 
     void mostrarInfo() const override;
+     
+
+
     bool podermagico() const override;
+    void mostrarDaño() override;
     void atacar() override;
-    void d() override;
+    void defensa() override;
 };
