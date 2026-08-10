@@ -1,4 +1,4 @@
-#include "Personaje.h"
+#include "Guerrero.h"
 #include <iostream>
 #include <memory>
 
