@@ -1,7 +1,7 @@
 int main() {
-  std::vector<Personaje> personajes;
-  std::vector<Mago> Magos;
-  std::vector<Guerrero> Guerreros;
+  std::vector<std::unique_ptr<Personaje>> personajes;
+  std::vector<std::unique_ptr<Mago>> Magos;
+  std::vector<std::unique_ptr<Guerrero>> Guerreros;
   int opcion = -1;
 
   while (opcion != 0) {
